@@ -1,0 +1,31 @@
+{
+  "name": "scratchcard",
+  "description": "Mimic a scratchcard with HTML5",
+  "main": "dist/scratchcard.js",
+  "moduleType": ["globals", "amd", "node"],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "Makefile",
+    "package.json",
+    "gulpfile.js",
+    "index.js",
+    "lib",
+    "server.js",
+    "example"
+  ],
+  "keywords": [
+    "scratchcard",
+    "scratch",
+    "card"
+  ],
+  "authors": [
+    "Cédric Connes <cedric.connes@gmail.com>",
+    "Unitag (http://www.unitag.io)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/connesc/scratchcard.git"
+  }
+}
