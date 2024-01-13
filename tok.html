@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TikTok Live Chat</title>
+</head>
+<body>
+    <ul id="chat"></ul>
+    
+    <script>
+        const chatList = document.getElementById('chat');
+        const ws = new WebSocket('ws://localhost:8080'); // Replace with your WebSocket server URL
+
+        ws.addEventListener('message', event => {
+            const data = JSON.parse(event.data);
+            const chatItem = document.createElement('li');
+            chatItem.textContent = `${data.uniqueId} (userId:${data.userId}) writes: ${data.comment}`;
+            chatList.appendChild(chatItem);
+        });
+    </script>
+</body>
+</html>
